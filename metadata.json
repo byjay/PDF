@@ -1,0 +1,5 @@
+{
+  "name": "DocxToPDF Converter",
+  "description": "A client-side bulk DOCX to PDF converter using web technologies.",
+  "requestFramePermissions": []
+}
