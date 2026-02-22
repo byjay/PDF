@@ -18,7 +18,7 @@ export const FileList: React.FC<FileListProps> = ({ files, onRemove }) => {
           {files.filter(f => f.status === 'completed').length} / {files.length} 완료
         </span>
       </div>
-      
+
       <div className="max-h-[400px] overflow-y-auto custom-scrollbar p-2">
         {files.map((fileItem) => (
           <div
@@ -57,8 +57,8 @@ export const FileList: React.FC<FileListProps> = ({ files, onRemove }) => {
             {fileItem.status !== 'converting' && (
               <button
                 onClick={() => onRemove(fileItem.id)}
-                className="p-1.5 rounded-full hover:bg-gray-200 text-gray-400 hover:text-gray-600 transition-colors opacity-0 group-hover:opacity-100"
-                title="목록에서 제거"
+                className="p-1.5 rounded-full hover:bg-red-100 text-gray-400 hover:text-red-600 transition-colors"
+                title="목록에서 삭제"
               >
                 <X className="w-4 h-4" />
               </button>
